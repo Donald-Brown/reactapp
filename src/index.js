@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './App.css';
 import App from './App';
-import Tick from './Tick';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -12,8 +12,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-setInterval(Tick, 1000);
-
+// components start with capital letter since html need to be lower case
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -11,3 +11,23 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+h3 {
+  text-align: center;
+}
+
+.Avatar {
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+.Avatar {
+  margin-right: 0.5rem;
+  float: left;
+}
+
+.UserInfo-name {
+  padding-top: 0.2rem;
+}

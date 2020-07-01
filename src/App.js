@@ -1,33 +1,29 @@
 import React from "react";
-import "./App.css";
-import supernova from './img/supernova.jpg';
+// import "./App.css";
+import Supernova from './Supernova';
+import Welcome from './Welcome';
+// import Avatar from './comment/Avatar';
+// import UserInfo from './comment/UserInfo';
+import Comment from './comment/Comment';
+import donAvatar from './img/head2.jpg';
 
-function formatName(user) {
-  return user.firstName + " " + user.lastName;
+let don = {
+  firstName: 'Don',
+  lastName: 'Brown',
+  avatar: donAvatar,
+  age: 44
 }
 
-function getGreeting(user) {
-  if (user) {
-    return <h1 className="App">Hello, {formatName(user)}!</h1>;
-  }
-  return <h1 className="App">Hello, Stranger.</h1>;
-}
-
-const hp = {
-  firstName: "Super",
-  lastName: "Nova",
-};
-
-const img = <img src={supernova} height='400' width='auto' alt="supernaove" />
-
-const element = getGreeting(hp);
+let today = new Date();
+let todaysDay = today.toDateString();
 
 function App() {
   return (
     <div>
-      {element}
-      <h2>Good to see You</h2>
-      {img}
+      <Supernova />
+      <Welcome name="Mary" age="54" />
+      <Welcome name="Harry" age="46" />
+      <Comment user={don} text="Hi" date={todaysDay}/>
     </div>
   );
 }
