@@ -7,6 +7,8 @@ import Welcome from "./Welcome";
 import Comment from "./comment/Comment";
 import donAvatar from "./img/head2.jpg";
 import Clock from "./Clock";
+import ActionLink from "./ActionLink";
+import Toggle from './Toggle';
 
 let don = {
   firstName: "Don",
@@ -26,6 +28,8 @@ function App() {
       <Welcome name="Harry" age="46" />
       <Comment user={don} text="Hi" date={todaysDay} />
       <Clock />
+      <ActionLink />
+      <Toggle />
     </div>
   );
 }
